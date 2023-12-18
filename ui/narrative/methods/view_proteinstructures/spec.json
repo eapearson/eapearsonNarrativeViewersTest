@@ -8,7 +8,7 @@
   "app_type" : "viewer",
   "widgets" : {
     "input" : null,
-    "output" : "KBaseProteinStructuresView"
+    "output" : "DynamicServiceWidgetDataViewer"
   },
   "parameters" : [ {
     "id" : "proteinstructures",
@@ -31,6 +31,14 @@
         {
           "narrative_system_variable": "workspace_id",
           "target_property": "ws"
+        },
+        {
+          "constant_value": "eapearsonWidgetTest10",
+          "target_property": "service_module_name"
+        },
+        {
+          "constant_value": "media_viewer_py",
+          "target_property": "widget_name"
         }
       ]
     }

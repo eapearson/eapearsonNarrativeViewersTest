@@ -8,10 +8,10 @@
   "app_type" : "viewer",
   "widgets" : {
     "input" : null,
-    "output" : "kbaseTabTable"
+    "output" : "DynamicServiceWidgetDataViewer"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "ref",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -25,16 +25,16 @@
     "none" : {
       "output_mapping" : [
         {
-          "constant_value": "KBaseBiochem.Media",
-          "target_property": "type"
+          "input_parameter": "ref",
+          "target_property": "ref"
         },
         {
-          "input_parameter": "param0",
-          "target_property": "obj"
+          "constant_value": "eapearsonWidgetTest10",
+          "target_property": "service_module_name"
         },
         {
-          "narrative_system_variable": "workspace",
-          "target_property": "ws"
+          "constant_value": "media_viewer_py",
+          "target_property": "widget_name"
         }
       ]
     }

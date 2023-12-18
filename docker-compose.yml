@@ -1,0 +1,21 @@
+version: '3.6'
+networks:
+  kbase-dev:
+    external: true
+    name: kbase-dev
+services:
+  eapearsonnarrativeviewers:
+    build:
+      context: .
+    container_name: eapearsonnarrativeviewers
+    # should match the exact module name
+    hostname: NarrativeViewers
+    dns: 8.8.8.8
+    volumes:
+      - .:/kb/module
+    networks:
+      - kbase-dev
+    ports:
+      - "${PORT:-5100}:5000"
+    environment:
+      - KBASE_ENDPOINT
