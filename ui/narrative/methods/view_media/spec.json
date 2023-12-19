@@ -10,24 +10,10 @@
     "input" : null,
     "output" : "DynamicServiceWidgetDataViewer"
   },
-  "parameters" : [ {
-    "id" : "ref",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseBiochem.Media" ]
-    }
-  } ],
+  "parameters" : [ ],
   "behavior" : {
     "none" : {
       "output_mapping" : [
-        {
-          "input_parameter": "ref",
-          "target_property": "ref"
-        },
         {
           "constant_value": "eapearsonWidgetTest10",
           "target_property": "service_module_name"

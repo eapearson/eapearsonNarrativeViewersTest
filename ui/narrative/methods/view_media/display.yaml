@@ -30,14 +30,7 @@ suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    ref :
-        ui-name : |
-            Media ID
-        short-hint : |
-            Media type [9.1]
-        long-hint  : |
-            Media type [9.1]
-
+    
 
 description : |
     Bring up a detailed view of a Media set within the narrative. [9]
