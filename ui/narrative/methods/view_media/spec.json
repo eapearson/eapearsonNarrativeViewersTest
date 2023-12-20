@@ -8,7 +8,7 @@
   "app_type" : "viewer",
   "widgets" : {
     "input" : null,
-    "output" : "DynamicServiceWidgetDataViewer"
+    "output" : "ServiceWidgetViewer"
   },
   "parameters" : [ ],
   "behavior" : {
